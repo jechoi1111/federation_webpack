@@ -6,8 +6,8 @@ import {TestPage} from 'remote_host/TestPage'
 
 export const App = () => {
     return (<>
-            <div>HELLO, World!!
-                <span>{Add(1, 3)}</span>
+            <div>HOST
+                <div>{Add({a: 3, b: 3})}</div>
                 <Checkbox />
                 <Button/>
             </div>

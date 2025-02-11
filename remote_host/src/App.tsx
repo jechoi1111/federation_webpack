@@ -3,5 +3,5 @@ import {Button} from 'webpack_remote/Button'
 import {TestPage} from "./pages/TestPage";
 
 export const App = () => {
-    return <div>HELLO, World!!! <Button /><TestPage/></div>
+    return <div>REMOTE & HOST <Button /><TestPage/></div>
 }
