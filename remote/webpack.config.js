@@ -24,7 +24,8 @@ module.exports = {
         exposes: {
             './commonUtil': './src/utils/common.ts',
             './Button': './src/components/Button.tsx',
-            './Checkbox': './src/components/Checkbox.tsx'
+            './Checkbox': './src/components/Checkbox.tsx',
+            './Radio': './src/components/Radio.tsx'
 
         },
         shared: {react: {singleton: true}, "react-dom": {singleton: true}},
