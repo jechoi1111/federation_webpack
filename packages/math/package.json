@@ -1,0 +1,10 @@
+{
+  "name": "@repo/math",
+  "type": "module",
+  "exports": {
+    "./subtract": "./subtract"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}
