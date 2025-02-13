@@ -23,11 +23,12 @@ module.exports = {
         new ModuleFederationPlugin({
         name: 'remote_host',
         remotes: {
-            webpack_remote: `webpack_remote@http://localhost:3000/remoteEntry.js`
+            webpack_remote: `webpack_remote@http://localhost:3000/remoteEntry.js`,
+            webpack_host: `webpack_host@http://localhost:3001/remoteEntry.js`
         },
         filename: 'remoteEntry.js',
         exposes: {
-            './TestPage': './src/pages/TestPage.tsx'
+            './TestPage': './src/pages/TestPage.tsx',
         },
         shared: {react: {singleton: true}, "react-dom": {singleton: true}},
     })],

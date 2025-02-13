@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Button = () => {
+export type ButtonProps = {
+    onClick: () => void
+}
+
+const Button = ({onClick}:ButtonProps) => {
     return (
-        <button>
-            Click
+        <button onClick={onClick}>
+            Click1
         </button>
     );
 };

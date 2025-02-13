@@ -25,10 +25,18 @@ module.exports = {
             './commonUtil': './src/utils/common.ts',
             './Button': './src/components/Button.tsx',
             './Checkbox': './src/components/Checkbox.tsx',
-            './Radio': './src/components/Radio.tsx'
+            './Radio': './src/components/Radio.tsx',
+            './Store': './src/zustand/example/store.ts'
 
         },
-        shared: {react: {singleton: true}, "react-dom": {singleton: true}},
+        remotes: {
+            webpack_host: `webpack_remote@http://localhost:3001/remoteEntry.js`
+        },
+        shared: {
+            react: {singleton: true},
+            "react-dom": {singleton: true},
+            // zustand: {singleton: true}
+        },
     })],
     module: {
         rules: [
